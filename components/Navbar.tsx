@@ -22,6 +22,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons"
+import { LINK_TO_BUY } from "@/constants/links"
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()
@@ -87,7 +88,7 @@ export default function WithSubnavigation() {
             fontSize={"sm"}
             fontWeight={600}
             color={"white"}
-            href="/signup"
+            href={LINK_TO_BUY}
             bg={"#ffa56e"}
             _hover={{
               bg: "#ffa43f",

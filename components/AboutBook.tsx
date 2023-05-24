@@ -70,7 +70,7 @@ const TopicosDoLivro = [
   },
   {
     title: "Modelo de consultas",
-    description: "Eu explano exatamente o que é o parto humanizado e seus beneficios para a mamãe e o bebê.",
+    description: " ",
     image : "images/icons/bg-icon-2.svg",
   },
   {

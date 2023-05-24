@@ -1,0 +1,1 @@
+export const LINK_TO_BUY = "https://pay.hotmart.com/Q83182028C"

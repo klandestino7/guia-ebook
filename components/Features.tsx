@@ -15,6 +15,7 @@ import {
 import { IoAnalyticsSharp, IoLogoBitcoin, IoSearchSharp } from "react-icons/io5"
 import { ReactElement } from "react"
 import { ShapeDivisor } from "./ShapeDivisor"
+import { LINK_TO_BUY } from "@/constants/links"
 
 interface FeatureProps {
   text: string
@@ -65,6 +66,7 @@ export default function SplitWithImage() {
                 bg={"#ffa56e"}
                 rounded={"sm"}
                 px={6}
+                href={LINK_TO_BUY}
                 _hover={{
                   bg: "#ffa43f",
                 }}

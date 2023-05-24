@@ -12,6 +12,7 @@ import {
     Button,
     useColorModeValue,
 } from "@chakra-ui/react"
+import { LINK_TO_BUY } from "@/constants/links"
 
 export const BeforeFooterCallToAction = () => {
     return (
@@ -75,6 +76,7 @@ export const BeforeFooterCallToAction = () => {
                             fontSize={"1xl"}
                             padding={"2vh"}
                             // px={6}
+                            href={LINK_TO_BUY}
                             _hover={{
                             bg: "#ffa43f",
                             }}
