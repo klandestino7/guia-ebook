@@ -64,6 +64,7 @@ export default function SplitWithImage() {
             <Button
                 colorScheme={"green"}
                 bg={"#ffa56e"}
+                as={"a"}
                 rounded={"sm"}
                 px={6}
                 href={LINK_TO_BUY}

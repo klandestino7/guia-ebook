@@ -16,9 +16,10 @@ const Testimonial = ({ children }: { children: ReactNode }) => {
   return <Box>{children}</Box>
 }
 
-const TestimonialContent = ({ children }: { children: ReactNode }) => {
+const TestimonialContent = ({ children, key }: { children: ReactNode, key: number }) => {
   return (
     <Flex
+      key = {key}
       bg={useColorModeValue("white", "gray.800")}
       boxShadow={"lg"}
       p={4}
@@ -42,7 +43,7 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
 
 const TestimonialHeading = ({ children }: { children: ReactNode }) => {
   return (
-    <Heading as={"h3"} fontSize={"xl"} align={"center"} color={"#49c190"}>
+    <Heading as={"h3"} fontSize={"xl"} color={"#49c190"}>
       {children}
     </Heading>
   )
@@ -191,18 +192,18 @@ export default function WithSpeechBubbles() {
             justifyContent={"center"}
         >
           { 
-            TopicosDoLivro.map(item =>  (
-                <TestimonialContent>
-                  {/* <Image 
-                    src={item.image}
-                    alt={item.title}
-                    size={"sm"}
-                  /> */}
-                  <TestimonialHeading>{item.title}</TestimonialHeading>
-                  <TestimonialText>
-                    {item.description}
-                  </TestimonialText>
-                </TestimonialContent>
+            TopicosDoLivro.map((item, idx) =>  (
+                  <TestimonialContent key={idx}>
+                    {/* <Image 
+                      src={item.image}
+                      alt={item.title}
+                      size={"sm"}
+                    /> */}
+                    <TestimonialHeading>{item.title}</TestimonialHeading>
+                    <TestimonialText>
+                      {item.description}
+                    </TestimonialText>
+                  </TestimonialContent>
               )
             )
           }

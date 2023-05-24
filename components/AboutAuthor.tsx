@@ -44,7 +44,7 @@ export default function AboutAuthor() {
                             rounded={"md"}
                             alt={"feature image"}
                             src={"images/cover/author.png"}
-                            objectFit={"full"}
+                            // objectFit={"full"}
                             w={'xl'}
                         />
                     </Flex>

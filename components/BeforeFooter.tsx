@@ -74,6 +74,7 @@ export const BeforeFooterCallToAction = () => {
                             rounded={"sm"}
                             w={"100%"}
                             fontSize={"1xl"}
+                            as={"a"}
                             padding={"2vh"}
                             // px={6}
                             href={LINK_TO_BUY}
