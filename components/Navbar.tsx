@@ -40,7 +40,7 @@ export default function WithSubnavigation() {
         // borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
-        <Flex
+        {/* <Flex
           flex={{ base: 1, md: "auto" }}
           ml={{ base: -2 }}
           display={{ base: "flex", md: "none" }}
@@ -53,7 +53,7 @@ export default function WithSubnavigation() {
             variant={"ghost"}
             aria-label={"Toggle Navigation"}
           />
-        </Flex>
+        </Flex> */}
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Text
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
@@ -71,9 +71,7 @@ export default function WithSubnavigation() {
             </Button>
           </Text>
 
-          {/* <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <DesktopNav />
-          </Flex> */}
+
         </Flex>
 
         <Stack
@@ -99,9 +97,6 @@ export default function WithSubnavigation() {
         </Stack>
       </Flex>
 
-      <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
-      </Collapse>
     </Box>
   )
 }
