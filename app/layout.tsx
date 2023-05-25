@@ -15,8 +15,8 @@ export default function RootLayout({
     <html lang="en">
 
       <head>
-        <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-J2P8HKXW6Z`} />
-        <Script strategy="lazyOnload">
+        <Script id="id-google-tag-01" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-J2P8HKXW6Z`} />
+        <Script id="id-google-tag-02" strategy="lazyOnload">
             {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
