@@ -16,16 +16,14 @@ import {
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react"
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from "@chakra-ui/icons"
-import { LINK_TO_BUY } from "@/constants/links"
+
+import { LINK_TO_BUY } from "@/constants/links";
+
+import { usePathname } from 'next/navigation';
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()
+  const pathname  = usePathname();
 
   return (
     <Box>
@@ -80,20 +78,24 @@ export default function WithSubnavigation() {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            as={"a"}
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            href={LINK_TO_BUY}
-            bg={"#ffa56e"}
-            _hover={{
-              bg: "#ffa43f",
-            }}
-          >
-            Comprar agora
-          </Button>
+          {
+            pathname == "/" && (
+              <Button
+                as={"a"}
+                display={{ base: "none", md: "inline-flex" }}
+                fontSize={"sm"}
+                fontWeight={600}
+                color={"white"}
+                href={LINK_TO_BUY}
+                bg={"#ffa56e"}
+                _hover={{
+                  bg: "#ffa43f",
+                }}
+              >
+                Comprar agora
+              </Button>
+            )
+          }
         </Stack>
       </Flex>
 
