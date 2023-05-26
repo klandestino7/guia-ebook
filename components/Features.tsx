@@ -59,7 +59,7 @@ export default function SplitWithImage() {
             <Heading color={"whiteAlpha.800"}>Calma que vai dar tudo certo!</Heading>
             <Text color={"whiteAlpha.700"} fontSize={"lg"}>
               Acabe com suas duvidas sobre sua gestação. 
-              Com este livro você vai sanar muitas de suas duvidas em seu período pré e pos-parto
+              Este ebook vai sanar muitas de suas duvidas em seu período pré e pos-parto
             </Text>
             <Button
                 colorScheme={"green"}
