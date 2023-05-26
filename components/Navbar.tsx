@@ -92,7 +92,7 @@ export default function WithSubnavigation() {
                   bg: "#ffa43f",
                 }}
               >
-                Comprar agora
+                Obter o ebook agora!
               </Button>
             )
           }

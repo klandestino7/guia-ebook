@@ -83,7 +83,7 @@ export const BeforeFooterCallToAction = () => {
                             }}
                             marginTop={"2vh"}
                         >
-                            Comprar agora
+                            Obter ebook!
                         </Button>
                     </Flex>
                 </Flex>
